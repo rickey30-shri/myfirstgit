@@ -9,5 +9,5 @@ while True:
     c, addr=s.accept()
     name= c.recv(1024).decode()
     print("connected with",addr,name)
-    c.send(bytes('welcome to aakash','utf-8'))
+    c.send(bytes('you are connected  mytest server','utf-8'))
     c.close()
